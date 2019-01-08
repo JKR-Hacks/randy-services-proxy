@@ -1,0 +1,18 @@
+{
+  "name": "randy-services-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKR-Hacks/randy-services-proxy.git"
+  },
+  "author": "Randy Thomas",
+  "bugs": {
+    "url": "https://github.com/JKR-Hacks/randy-services-proxy/issues"
+  },
+  "homepage": "https://github.com/JKR-Hacks/randy-services-proxy#readme"
+}

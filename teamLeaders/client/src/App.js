@@ -18,7 +18,12 @@ class App extends Component {
   componentDidMount() {
     $.ajax({
       method: 'GET',
-      url: '/stats',
+      url: 'http://localhost:3002/stats',
+      mode: 'no-cors',
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      },
       error: (err) => {
         console.log(err, 'err');
       },
@@ -30,7 +35,12 @@ class App extends Component {
     });
     $.ajax({
       method: 'GET',
-      url: '/photos',
+      url: 'http://localhost:3002/photos',
+      mode: 'no-cors',
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      },
       dataType: 'json',
       error: (err) => {
         console.log(err, 'err');

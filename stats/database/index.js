@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/espn/');
+mongoose.connect('mongodb://localhost/espn');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));

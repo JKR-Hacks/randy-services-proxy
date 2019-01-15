@@ -33,10 +33,10 @@ const Navigation = (props) => {
               <a className="nav-link" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">Stats</a>
+              <a className="nav-link" href="http://localhost:3004" target="_blank">Stats</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">Schedule</a>
+              <a className="nav-link" href="http://localhost:3002" target="_blank">Schedule</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="http://localhost:3001" target="_blank">Standings</a>

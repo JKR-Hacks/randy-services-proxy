@@ -18,7 +18,7 @@ class App extends Component {
   componentDidMount() {
     $.ajax({
       method: 'GET',
-      url: 'http://localhost:3002/stats',
+      url: 'http://localhost:3003/stats',
       mode: 'no-cors',
       headers: {
         'Access-Control-Allow-Origin': '*',
@@ -35,7 +35,7 @@ class App extends Component {
     });
     $.ajax({
       method: 'GET',
-      url: 'http://localhost:3002/photos',
+      url: 'http://localhost:3003/photos',
       mode: 'no-cors',
       headers: {
         'Access-Control-Allow-Origin': '*',

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-underscore-dangle */
 import React from 'react';
@@ -38,7 +39,7 @@ const Navigation = (props) => {
               <a className="nav-link" href="/">Schedule</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="http://localhost:3001">Standings</a>
+              <a className="nav-link" href="http://localhost:3001" target="_blank">Standings</a>
             </li>
           </ul>
         </div>

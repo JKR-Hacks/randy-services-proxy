@@ -1,16 +1,15 @@
+/* eslint-disable consistent-return */
 import React, { Component } from 'react';
 import axios from 'axios';
 
 import Schedule from './components/Schedule';
-
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       schedule: [],
-      // ramsFeed: [],
-      // home view should render schedule sidebar and gamefeed on the same page
+
       view: 'schedule',
     };
   }
@@ -37,12 +36,7 @@ class App extends Component {
       });
   }
 
-  // TODO
-  // implement changeView method to switch from main page to schedule page
-
   renderView() {
-    // receives props object, destructure properties
-    // const { schedule, ramsFeed, view } = this.state;
     const { schedule, view } = this.state;
     if (view === 'schedule') {
       return (
@@ -53,6 +47,24 @@ class App extends Component {
         </div>
       );
     }
+    // if (view === 'feed') {
+    //   return (
+    //     <div id="feed">
+    //       <Feed
+    //         ramsFeed={ramsFeed}
+    //       />
+    //     </div>
+    //   );
+    // }
+    // if (view === 'sidebarSchedule') {
+    //   return (
+    //     <div id="sidebarSchedule">
+    //       <SidebarSchedule
+    //         ramsSchedule={schedule}
+    //       />
+    //     </div>
+    //   );
+    // }
   }
 
   render() {

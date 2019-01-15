@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 const db = require('../Models/ScheduleDB.js');
 const FeedDB = require('../Models/FeedDB.js');
 
@@ -8,7 +9,8 @@ const ramsFeed = [{
   title: 'Savannah Smiles',
   bigphoto: 'http://cdn1.thecomeback.com/wp-content/uploads/2016/11/rams_throwbacks.jpg',
   smallphoto: 'https://www.thewrap.com/wp-content/uploads/2017/12/Jared-Goff-LA-Rams.jpg',
-  videoclip: 'https://dailymail.co.uk/purus/phasellus/in/felis/donec.xml?dignissim=justo&vestibulum=sollicitudin&vestibulum=ut&ante=suscipit&ipsum=a&primis=feugiat&in=et&faucibus=eros&orci=vestibulum&luctus=ac&et=est&ultrices=lacinia&posuere=nisi&cubilia=venenatis&curae=tristique&nulla=fusce&dapibus=congue&dolor=diam&vel=id&est=ornare&donec=imperdiet&odio=sapien&justo=urna&sollicitudin=pretium&ut=nisl&suscipit=ut&a=volutpat&feugiat=sapien&et=arcu&eros=sed&vestibulum=augue&ac=aliquam&est=erat&lacinia=volutpat&nisi=in&venenatis=congue&tristique=etiam&fusce=justo&congue=etiam&diam=pretium&id=iaculis&ornare=justo&imperdiet=in&sapien=hac&urna=habitasse&pretium=platea&nisl=dictumst&ut=etiam&volutpat=faucibus&sapien=cursus&arcu=urna&sed=ut&augue=tellus&aliquam=nulla&erat=ut&volutpat=erat&in=id&congue=mauris&etiam=vulputate&justo=elementum&etiam=nullam&pretium=varius&iaculis=nulla&justo=facilisi&in=cras&hac=non&habitasse=velit&platea=nec&dictumst=nisi&etiam=vulputate&faucibus=nonummy&cursus=maecenas&urna=tincidunt&ut=lacus&tellus=at&nulla=velit&ut=vivamus&erat=vel&id=nulla&mauris=eget&vulputate=eros&elementum=elementum&nullam=pellentesque&varius=quisque&nulla=porta&facilisi=volutpat&cras=erat&non=quisque&velit=erat&nec=eros&nisi=viverra&vulputate=eget&nonummy=congue&maecenas=eget&tincidunt=semper&lacus=rutrum&at=nulla&velit=nunc&vivamus=purus&vel=phasellus',
+  newsfeed: 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Decode this secret message. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Decode this secret message. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Meow',
+  videoclip: 'https://www.youtube.com/embed/mYXu1xeiYKA',
   timestamp: '10:35 AM',
 }, {
   id: 2,
@@ -227,7 +229,8 @@ const ramsFeed = [{
   title: 'KM 31: Kilometro 31',
   bigphoto: 'http://i.imgur.com/bqpVixH.jpg',
   smallphoto: 'https://pbs.twimg.com/media/Dgf07mHX0AAMxKx.jpg',
-  videoclip: 'http://jigsy.com/tortor/quis/turpis.png?volutpat=dui&erat=vel&quisque=sem&erat=sed&eros=sagittis&viverra=nam&eget=congue&congue=risus&eget=semper&semper=porta&rutrum=volutpat&nulla=quam&nunc=pede&purus=lobortis&phasellus=ligula&in=sit&felis=amet&donec=eleifend&semper=pede&sapien=libero&a=quis&libero=orci&nam=nullam&dui=molestie&proin=nibh&leo=in&odio=lectus&porttitor=pellentesque&id=at&consequat=nulla&in=suspendisse&consequat=potenti&ut=cras&nulla=in&sed=purus&accumsan=eu&felis=magna&ut=vulputate&at=luctus&dolor=cum&quis=sociis&odio=natoque&consequat=penatibus&varius=et&integer=magnis&ac=dis&leo=parturient&pellentesque=montes&ultrices=nascetur&mattis=ridiculus&odio=mus&donec=vivamus&vitae=vestibulum&nisi=sagittis&nam=sapien&ultrices=cum&libero=sociis&non=natoque&mattis=penatibus&pulvinar=et&nulla=magnis&pede=dis&ullamcorper=parturient&augue=montes&a=nascetur&suscipit=ridiculus&nulla=mus&elit=etiam&ac=vel&nulla=augue&sed=vestibulum&vel=rutrum&enim=rutrum&sit=neque&amet=aenean&nunc=auctor&viverra=gravida&dapibus=sem&nulla=praesent&suscipit=id&ligula=massa&in=id&lacus=nisl&curabitur=venenatis&at=lacinia&ipsum=aenean',
+  newsfeed: 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Rams are so-so',
+  videoclip: 'https://www.youtube.com/embed/n5Pnz7hgm5Q',
   timestamp: '10:45 AM',
 }, {
   id: 24,
@@ -306,8 +309,8 @@ const ramsFeed = [{
   title: 'Like Water',
   bigphoto: 'https://pbs.twimg.com/media/DmCZM0vVAAY7ipD.jpg',
   smallphoto: 'https://cdn.chatsports.com/cache/1d/0e/1d0ef14b097845a7f853f4defca0dba4-original.jpg',
-  newsfeed: 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.',
-  videoclip: 'http://yellowpages.com/sed/nisl/nunc/rhoncus/dui/vel/sem.html?dui=suscipit&luctus=nulla&rutrum=elit&nulla=ac&tellus=nulla&in=sed&sagittis=vel&dui=enim&vel=sit&nisl=amet&duis=nunc&ac=viverra&nibh=dapibus&fusce=nulla&lacus=suscipit&purus=ligula&aliquet=in&at=lacus&feugiat=curabitur&non=at&pretium=ipsum&quis=ac&lectus=tellus&suspendisse=semper&potenti=interdum&in=mauris&eleifend=ullamcorper&quam=purus&a=sit&odio=amet&in=nulla&hac=quisque&habitasse=arcu&platea=libero&dictumst=rutrum&maecenas=ac&ut=lobortis',
+  newsfeed: 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.',
+  videoclip: 'https://www.youtube.com/embed/Df-x7xXlLZU',
   timestamp: '10:43 AM',
 }, {
   id: 32,
@@ -377,7 +380,7 @@ const ramsFeed = [{
   bigphoto: 'https://pbs.twimg.com/media/Dnz1dy-XcAI5VOa.jpg',
   smallphoto: 'https://media.nbclosangeles.com/images/620*472/AP_17358781323563.jpg',
   newsfeed: 'Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.',
-  videoclip: 'http://1688.com/elementum.jsp?sapien=cursus&ut=id&nunc=turpis&vestibulum=integer&ante=aliquet&ipsum=massa&primis=id&in=lobortis&faucibus=convallis&orci=tortor&luctus=risus&et=dapibus&ultrices=augue&posuere=vel&cubilia=accumsan&curae=tellus&mauris=nisi&viverra=eu&diam=orci&vitae=mauris&quam=lacinia&suspendisse=sapien&potenti=quis&nullam=libero&porttitor=nullam&lacus=sit&at=amet&turpis=turpis&donec=elementum&posuere=ligula&metus=vehicula&vitae=consequat&ipsum=morbi&aliquam=a&non=ipsum&mauris=integer&morbi=a&non=nibh&lectus=in&aliquam=quis&sit=justo&amet=maecenas&diam=rhoncus&in=aliquam&magna=lacus&bibendum=morbi&imperdiet=quis&nullam=tortor&orci=id',
+  videoclip: 'https://www.youtube.com/embed/VhErN5gq4oU',
   timestamp: '10:52 AM',
 }, {
   id: 39,
@@ -447,8 +450,8 @@ const ramsFeed = [{
   bigphoto: 'https://pbs.twimg.com/media/DY2iBOJVMAAMZzS.jpg',
   smallphoto: 'https://cdn.vox-cdn.com/uploads/chorus_image/image/47590877/20151101_111021.0.0.jpg',
   newsfeed: 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.',
-  videoclip: 'http://apple.com/a/feugiat/et/eros/vestibulum/ac.html?maecenas=magna&tincidunt=ac&lacus=consequat&at=metus&velit=sapien&vivamus=ut&vel=nunc&nulla=vestibulum&eget=ante&eros=ipsum&elementum=primis&pellentesque=in&quisque=faucibus&porta=orci&volutpat=luctus&erat=et&quisque=ultrices&erat=posuere&eros=cubilia&viverra=curae&eget=mauris&congue=viverra&eget=diam&semper=vitae&rutrum=quam&nulla=suspendisse&nunc=potenti&purus=nullam&phasellus=porttitor&in=lacus&felis=at&donec=turpis&semper=donec&sapien=posuere&a=metus&libero=vitae&nam=ipsum&dui=aliquam&proin=non&leo=mauris&odio=morbi&porttitor=non&id=lectus&consequat=aliquam&in=sit&consequat=amet&ut=diam&nulla=in&sed=magna&accumsan=bibendum&felis=imperdiet&ut=nullam&at=orci&dolor=pede&quis=venenatis&odio=non&consequat=sodales&varius=sed&integer=tincidunt&ac=eu&leo=felis&pellentesque=fusce&ultrices=posuere&mattis=felis&odio=sed&donec=lacus&vitae=morbi&nisi=sem',
-  timestamp: '10:45 AM',
+  videoclip: 'https://www.youtube.com/embed/y5E9Ysw43z0',
+  timestamp: '10:48 AM',
 }, {
   id: 46,
   author: 'Lindsey Thiry',
@@ -497,7 +500,7 @@ const ramsFeed = [{
   bigphoto: 'http://www1.pictures.zimbio.com/gi/Alec+Ogletree+Seattle+Seahawks+v+Los+Angeles+gOVIhBLrVqYl.jpg',
   smallphoto: 'https://cdn-s3.si.com/s3fs-public/2013/08/ramsthrowbacksgettyid157360826.jpg',
   newsfeed: 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.',
-  videoclip: 'http://japanpost.jp/dictumst/maecenas/ut.json?consectetuer=habitasse&adipiscing=platea&elit=dictumst&proin=etiam&risus=faucibus&praesent=cursus&lectus=urna&vestibulum=ut&quam=tellus&sapien=nulla&varius=ut&ut=erat&blandit=id&non=mauris&interdum=vulputate&in=elementum&ante=nullam&vestibulum=varius&ante=nulla&ipsum=facilisi&primis=cras&in=non&faucibus=velit&orci=nec&luctus=nisi&et=vulputate&ultrices=nonummy&posuere=maecenas&cubilia=tincidunt&curae=lacus&duis=at&faucibus=velit&accumsan=vivamus&odio=vel&curabitur=nulla&convallis=eget&duis=eros&consequat=elementum&dui=pellentesque&nec=quisque&nisi=porta&volutpat=volutpat&eleifend=erat&donec=quisque&ut=erat&dolor=eros&morbi=viverra&vel=eget&lectus=congue&in=eget&quam=semper&fringilla=rutrum&rhoncus=nulla&mauris=nunc&enim=purus&leo=phasellus&rhoncus=in&sed=felis&vestibulum=donec&sit=semper&amet=sapien&cursus=a&id=libero&turpis=nam&integer=dui&aliquet=proin&massa=leo&id=odio&lobortis=porttitor&convallis=id&tortor=consequat&risus=in&dapibus=consequat&augue=ut&vel=nulla&accumsan=sed&tellus=accumsan&nisi=felis&eu=ut&orci=at',
+  videoclip: 'https://www.youtube.com/embed/jacatlo-OkM',
   timestamp: '10:46 AM',
 }, {
   id: 51,
@@ -537,7 +540,7 @@ const ramsFeed = [{
   bigphoto: 'https://media.nbclosangeles.com/images/652*435/GettyImages-898097674.jpg',
   smallphoto: 'https://cdns.abclocal.go.com/content/wpvi/images/cms/2751521_1280x720.jpg',
   newsfeed: 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.',
-  videoclip: 'http://webeden.co.uk/lectus/in/quam/fringilla.json?rhoncus=sem&sed=mauris&vestibulum=laoreet&sit=ut&amet=rhoncus&cursus=aliquet&id=pulvinar&turpis=sed&integer=nisl&aliquet=nunc&massa=rhoncus&id=dui&lobortis=vel&convallis=sem&tortor=sed&risus=sagittis&dapibus=nam&augue=congue&vel=risus&accumsan=semper&tellus=porta&nisi=volutpat&eu=quam&orci=pede&mauris=lobortis&lacinia=ligula&sapien=sit&quis=amet&libero=eleifend&nullam=pede&sit=libero&amet=quis&turpis=orci&elementum=nullam&ligula=molestie&vehicula=nibh&consequat=in&morbi=lectus&a=pellentesque&ipsum=at&integer=nulla&a=suspendisse&nibh=potenti&in=cras&quis=in',
+  videoclip: 'https://www.youtube.com/embed/4GS0sOkb_aU',
   timestamp: '10:09 AM',
 }, {
   id: 55,
@@ -627,7 +630,7 @@ const ramsFeed = [{
   bigphoto: 'https://www.thewrap.com/wp-content/uploads/2017/08/LA-Stadium-Stadium-Bowl.jpg',
   smallphoto: 'https://cbsla.files.wordpress.com/2017/08/gettyimages-825299226.jpg',
   newsfeed: 'Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.',
-  videoclip: 'http://github.io/platea/dictumst/maecenas/ut.xml?orci=at&luctus=turpis&et=a&ultrices=pede&posuere=posuere&cubilia=nonummy&curae=integer&mauris=non&viverra=velit&diam=donec&vitae=diam&quam=neque&suspendisse=vestibulum&potenti=eget&nullam=vulputate&porttitor=ut&lacus=ultrices&at=vel&turpis=augue&donec=vestibulum&posuere=ante&metus=ipsum&vitae=primis&ipsum=in&aliquam=faucibus&non=orci&mauris=luctus&morbi=et&non=ultrices&lectus=posuere&aliquam=cubilia&sit=curae',
+  videoclip: 'https://www.youtube.com/embed/oO_pbAYLg1M',
   timestamp: '10:34 AM',
 }, {
   id: 64,
@@ -866,7 +869,8 @@ const ramsFeed = [{
   title: 'Firestorm',
   bigphoto: 'https://pbs.twimg.com/media/CrXOqXwW8AA9pRf.jpg',
   smallphoto: 'https://dmt55mxnkgbz2.cloudfront.net/900x0_s3-38441-1s3-38441-W-CA-AP-LA-STADIUM-100.jpg',
-  newsfeed: 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.',
+  newsfeed: 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.',
+  videoclip: 'https://www.youtube.com/embed/wJjoEfg-bDU',
   timestamp: '10:12 AM',
 }, {
   id: 88,
@@ -946,7 +950,7 @@ const ramsFeed = [{
   bigphoto: 'http://i2.cdn.turner.com/money/dam/assets/160706103824-la-rams-helmets-780x439.jpg',
   smallphoto: 'https://i.pinimg.com/236x/2f/9e/be/2f9ebe7c17ace7198b9487ea26bc24fe--nfc-west-logo-images.jpg',
   newsfeed: 'Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.',
-  videoclip: 'https://tinyurl.com/ultrices/posuere.html?sapien=mauris&placerat=lacinia&ante=sapien&nulla=quis&justo=libero&aliquam=nullam&quis=sit&turpis=amet&eget=turpis&elit=elementum&sodales=ligula&scelerisque=vehicula&mauris=consequat&sit=morbi&amet=a&eros=ipsum&suspendisse=integer&accumsan=a&tortor=nibh&quis=in&turpis=quis&sed=justo&ante=maecenas&vivamus=rhoncus&tortor=aliquam&duis=lacus&mattis=morbi&egestas=quis&metus=tortor',
+  videoclip: 'https://www.youtube.com/embed/yt_NmzcRcXg',
   timestamp: '10:29 AM',
 }, {
   id: 96,

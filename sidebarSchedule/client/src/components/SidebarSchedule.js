@@ -9,13 +9,12 @@ const style = {
   },
 };
 
-
-const SidebarSchedule = ({ ramsSchedule }) => (
+const SidebarSchedule = ({ ramsSchedule, handleClick }) => (
   <div className="col-sm">
     <p className="h5 text-dark font-weight-bold">REGULAR SEASON</p>
-    <table className="table table-striped">
+    <table className="table table-striped table-hover">
       <thead>
-        <tr>
+        <tr className="clickable-row" href="http://www.espn.com/nfl/team/schedule/_/name/lar">
           <th scope="col" />
           <th scope="col" />
           <th scope="col" />
@@ -28,18 +27,35 @@ const SidebarSchedule = ({ ramsSchedule }) => (
 
         {ramsSchedule.map(schedule => (
 
-          <tr key={schedule.id}>
+          <tr key={schedule.id} className="clickable-row" href="http://www.espn.com/nfl/team/schedule/_/name/lar">
             <td>
-              <img src={`${schedule.opponentlogo}`} className="rounded-circle" width={20} height={20} style={style.image} />
-              {schedule.vs}
+              <a href="http://www.espn.com/nfl/team/schedule/_/name/lar">
+                <img src={`${schedule.opponentlogo}`} className="rounded-circle" width={20} height={20} style={style.image} />
+              </a>
+              <a className="text-dark" href="http://www.espn.com/nfl/team/schedule/_/name/lar">
+                {schedule.vs}
+              </a>
             </td>
-            <td>{schedule.opponent}</td>
-            <td>{schedule.wl}</td>
-            <td><p>{schedule.result}</p></td>
+            <td>
+              <a className="text-dark" href="http://www.espn.com/nfl/team/schedule/_/name/lar">
+                {schedule.opponent}
+              </a>
+            </td>
+            <td>
+              <a className="text-dark" href="http://www.espn.com/nfl/team/schedule/_/name/lar">
+                {schedule.wl}
+              </a>
+            </td>
+            <td>
+              <a className="text-dark" href="http://www.espn.com/nfl/team/schedule/_/name/lar">
+                <p>{schedule.result}</p>
+              </a>
+            </td>
           </tr>
         ))}
       </tbody>
     </table>
+    <button type="button" className="btn btn-link btn-lg" onClick={handleClick}>Full Schedule</button>
   </div>
 );
 

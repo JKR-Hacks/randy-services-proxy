@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable consistent-return */
 import React, { Component } from 'react';
 import axios from 'axios';
 
 import SidebarSchedule from './components/SidebarSchedule';
-
 
 class App extends Component {
   constructor(props) {
@@ -11,11 +12,12 @@ class App extends Component {
       schedule: [],
       view: 'main',
     };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
     // fetch schedule data
-    axios.get('http://localhost:3006/espn/schedules', {
+    axios.get('http://localhost:3002/espn/schedules', {
       method: 'GET',
       mode: 'no-cors',
       headers: {
@@ -35,6 +37,13 @@ class App extends Component {
       });
   }
 
+  handleClick() {
+    const { view } = this.state;
+    this.setState({
+      view: 'schedule',
+    });
+  }
+
   renderView() {
     const { schedule, view } = this.state;
     if (view === 'main') {
@@ -42,6 +51,7 @@ class App extends Component {
         <div id="SidebarSchedule">
           <SidebarSchedule
             ramsSchedule={schedule}
+            handleClick={this.handleClick}
           />
         </div>
       );

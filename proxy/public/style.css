@@ -6,28 +6,30 @@
 #Standings {
   margin: auto;
   padding-bottom: 20px;
+  padding-left: 400px;
 }
 
 #Feed {
-  margin: auto;
+  margin-left: 100px;
+  padding-left: 200px;
 }
 
 #SidebarSchedule {
   justify-content: 'center';
   margin: auto;
-
+  padding-left: 50px;
 }
 
 #TeamLeaders {
   padding-top: 20px;
+  padding-left: 400px;
   width: auto;
   margin: auto;
   justify-content: 'center';
 }
 
 #Stats {
-  padding-top: 20px;
-  width: auto;
   margin: auto;
-  justify-content: 'center';
+  padding-bottom: 20px;
+  padding-left: 400px;
 }

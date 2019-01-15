@@ -20,7 +20,7 @@ app.get('/stats', (req, res) => {
   });
 });
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3004;
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);

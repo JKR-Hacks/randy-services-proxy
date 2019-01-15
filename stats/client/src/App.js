@@ -2,9 +2,6 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import MainComponent from './components/MainComponent.jsx';
-import axios from 'axios';
-
-// const sampleData = require('./Sample_Data.js');
 
 class App extends Component {
   constructor(props) {
@@ -17,7 +14,7 @@ class App extends Component {
   componentDidMount() {
     $.ajax({
       method: 'GET',
-      url: 'http://localhost:3001/stats',
+      url: 'http://localhost:3004/stats',
       mode: 'no-cors',
       headers: {
         "Access-Control-Allow-Origin": '*',
